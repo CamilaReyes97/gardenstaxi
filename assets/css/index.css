@@ -1,0 +1,14 @@
+.letternav >li >a {
+    color: rgb(20, 20, 20) !important;
+}
+
+
+.navmine{
+    background-color: black !important;
+   
+}
+
+.barra{
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+}
