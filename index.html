@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
@@ -163,7 +163,7 @@ if (isset($_POST['submit'])) {
         $respuesta = 'Something is wrong. Error: ' . $mail->ErrorInfo;
     }
 }
-?>
+?> -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -466,11 +466,11 @@ https://templatemo.com/tm-582-tale-seo-agency
               </div>
               <div class="col-lg-8">
                 
-    <?php
+  <!--   <?php
     if (isset($respuesta)) {
         echo '<div class="alert alert-info" role="alert" style="background:#F4BC33 !important">' . $respuesta . '</div>';
     }
-    ?>
+    ?> -->
                 <form id="contact-form" action="" method="post" action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>">
                   <div class="row">
                     <div class="col-lg-12">
