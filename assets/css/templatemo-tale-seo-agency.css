@@ -362,7 +362,7 @@ Header Style
   transition: all 0.3s ease 0s;
 }
 
-.background-header .main-nav .logo {
+.background-header .main-nav  {
   margin-top: 10px;
 }
 

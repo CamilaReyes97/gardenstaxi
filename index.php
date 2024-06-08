@@ -1,4 +1,4 @@
-<!-- <?php
+<?php
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
@@ -77,8 +77,7 @@ if (isset($_POST['submit'])) {
      <body>
          <div class='container'>
              <div class='header'>
-                 <img src='path/to/logo.png' alt='Company Logo'>
-                 <div class='title'>Company Name</div>
+                 <div class='title'>Gardens Transportation Inc</div>
              </div>
              <table>
                  <tr>
@@ -141,7 +140,7 @@ if (isset($_POST['submit'])) {
     $mail = new PHPMailer(true);
 
     try {
-        $mail->SMTPDebug = SMTP::DEBUG_OFF; // Deshabilitar el debug para producción
+        $mail->SMTPDebug = SMTP::DEBUG_SERVER; // Deshabilitar el debug para producción
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
@@ -151,7 +150,7 @@ if (isset($_POST['submit'])) {
         $mail->Port = 587; // Usar el puerto 587 para STARTTLS
 
         $mail->setFrom('pruebas.webs97@gmail.com', 'Booking'); // Reemplaza con tu correo de Gmail y nombre
-        $mail->addAddress('camila.reyesber97@gmail.com', 'To'); // Reemplaza con el destinatario deseado
+        $mail->addAddress('gardensyellowcab@yahoo.com', 'To'); // Reemplaza con el destinatario deseado
 
         $mail->isHTML(true);
         $mail->Subject = 'New Booking!';
@@ -163,7 +162,7 @@ if (isset($_POST['submit'])) {
         $respuesta = 'Something is wrong. Error: ' . $mail->ErrorInfo;
     }
 }
-?> -->
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -175,7 +174,7 @@ if (isset($_POST['submit'])) {
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <title>Garden Taxi-Home</title>
-
+  <link rel="shortcut icon" href="./assets/images/logo.jpg" type="image/x-icon" style="border-radius:50%">
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -219,19 +218,18 @@ https://templatemo.com/tm-582-tale-seo-agency
         <div class="col-lg-8 col-sm-9">
           <div class="left-info">
             <ul class="letternav">
-              <li><a href="#" ><i class="fa fa-phone letternav"></i>+1 1234 5678</a></li>
-              <li><a href="#"><i class="fa fa-envelope letternav"></i>infocompany@email.com</a></li>
-              <li><a href="#"><i class="fa fa-map-marker letternav"></i>1616 N Florida Mango Rd, WPB</a></li>
+              <li><a href="#" ><i class="fa fa-phone letternav"></i>561-799-4994 - 561-799-2088
+              <li><a href="#"><i class="fa fa-envelope letternav"></i>gardensyellowcab@yahoo.com</a></li>
+              <li><a href="#"><i class="fa fa-map-marker letternav"></i>1616 N Florida Mango Rd,WPB</a></li>
             </ul>
           </div>
         </div>
         <div class="col-lg-4 col-sm-3">
           <div class="social-icons">
             <ul class="letternav">
-              <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+              <li><a href="https://www.facebook.com/people/Gardens-transportation-inc/100063508092324/"><i class="fab fa-facebook"></i></a></li>
               <li><a href="#"><i class="fab fa-twitter"></i></a></li>
               <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-              <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
             </ul>
           </div>
         </div>
@@ -248,22 +246,16 @@ https://templatemo.com/tm-582-tale-seo-agency
                 <nav class="main-nav barra " style="background-color: black !important;">
                     <!-- ***** Logo Start ***** -->
                     <a href="index.html" class="logo">
-                        <img src="assets/images/logo.png" alt="" style="max-width: 112px;">
+                        <img src="assets/images/logo2.png" alt="" style="max-width: 152px; "  >
                     </a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav main-nav " style="padding-bottom: 30px ;">
                       <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
                       <li class="scroll-to-section"><a href="#services">Services</a></li>
-                      <li class="scroll-to-section"><a href="#projects">Projects</a></li>
-                      <li class="has-sub">
-                          <a href="javascript:void(0)">Pages</a>
-                          <ul class="sub-menu">
-                              <li><a href="#">About Us</a></li>
-                              <li><a href="#">FAQs</a></li>
-                          </ul>
-                      </li>
-                      <li class="scroll-to-section"><a href="#infos">Infos</a></li>
+                      <li class="scroll-to-section"><a href="#projects">Fleet</a></li>
+                    
+                      <li class="scroll-to-section"><a href="#infos">About Us</a></li>
                       <li class="scroll-to-section"><a href="#contact">Contact</a></li>
                   </ul>   
                     <a class='menu-trigger'>
@@ -277,25 +269,23 @@ https://templatemo.com/tm-582-tale-seo-agency
   </header>
   <!-- ***** Header Area End ***** -->
 
-  <div class="main-banner" id="top">
+  <div class="main-banner" id="top" style="position:relative; top:60px; margin:0px">
     <div class="container">
       <div class="row">
-        <div class="col-lg-7">
+        <div class="col-lg-7" >
           <div class="caption header-text">
-            <h6>Gardens Taxi </h6>
+            <h6>Palm Beach, FL </h6>
             <div class="line-dec"></div>
-            <h4>Dive <em>Gardens</em> Taxi <span style="color: #F4BC33">Yellow Cab</span></h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident alias harum fuga iusto pariatur odit velit ullam commodi odio ratione distinctio ipsum quae dignissimos eius ipsa, sapiente perspiciatis necessitatibus assumenda.</p>
+            <h4 style="color: #F4BC33"><em>Gardens</em> Transportation </h4>
+            <p>Welcome to Gardens Transportation, Gardens Yellow Cab and Airport Services. Since 1995, we have been providing exceptional transportation services. Our fleet includes SUVs, passenger vans, party buses, and limousines, along with reliable cab and airport services.</p>
             <div class="main-button scroll-to-section" ><a href="#services">Discover More</a></div>
-            <span>or</span>
-            <div class="second-button"><a href="faqs.html">Check our FAQs</a></div>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="services section" id="services" style="position: relative; top:-150px">
+  <div class="services section" id="services" style="margin:0px" >
     <div class="container">
       <div class="row">
         <div class="col-lg-6 offset-lg-6">
@@ -305,10 +295,10 @@ https://templatemo.com/tm-582-tale-seo-agency
                 <h2>We Provide <em>Different Services</em> &amp;
                   <span>Transportation</span> For Your Needs</h2>
                   <div class="line-dec"></div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doers eiusmod.</p>
+                  <p>At Gardens Transportation, we offer a wide range of services to meet all your transportation needs:</p>
               </div>
             </div>
-            <div class="col-lg-6 col-sm-6">
+            <div class="col-lg-6 col-sm-6" >
               <div class="service-item">
                 <div class="icon">
                   <img src="assets/images/services-01.png" alt="discover SEO" class="templatemo-feature">
@@ -346,14 +336,15 @@ https://templatemo.com/tm-582-tale-seo-agency
     </div>
   </div>
 
-  <div class="projects section" id="projects" style="position: relative; top:-150px">
+  <div class="projects section" id="projects" >
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
           <div class="section-heading">
-            <h2>Discover Our <em>Locations</em></h2>
-            <div class="line-dec"></div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doers eiusmod.</p>
+            <h2>Discover Our <em>Fleet</em></h2>
+            <div class="line-dec" ></div>
+            <p>Explore our premium fleet, perfect for any occasion. Choose from sleek SUVs, luxurious Sprinter Limos, elegant Stretch Limousines, and spacious Passenger Vans. Each vehicle is meticulously maintained and equipped with modern amenities for a comfortable and stylish ride.
+</p>
           </div>
         </div>
       </div> 
@@ -362,46 +353,46 @@ https://templatemo.com/tm-582-tale-seo-agency
       <div class="row">
         <div class="col-lg-12">
           <div class="owl-features owl-carousel">
-            <div class="item">
-              <img src="assets/images/projects-01.jpg" alt="">
-              <div class="down-content">
-                <h4>Top-Notch SUV Rentals in West Palm Beach</h4>
-                <a href="#"><i class="fa fa-link" style="color: #F4BC33 !important"></i></a>
-              </div>
-            </div>
-            <div class="item">
-              <img src="assets/images/projects-02.jpg" alt="">
-              <div class="down-content">
-                <h4>Reliable Transportation Services </h4>
-                <a href="#"><i class="fa fa-link" style="color: #F4BC33 !important"></i></a>
-              </div>
-            </div>
-            <div class="item">
-              <img src="assets/images/projects-03.jpg" alt="">
-              <div class="down-content">
-                <h4>Your Go-To for West Palm Beach Transfers</h4>
-                <a href="#"><i class="fa fa-link" style="color: #F4BC33 !important"></i></a>
-              </div>
-            </div>
-            <div class="item">
-              <img src="assets/images/projects-04.jpg" alt="">
-              <div class="down-content">
-                <h4>Effortless Commutes in West Palm Beach</h4>
-                <a href="#"><i class="fa fa-link" style="color: #F4BC33 !important"></i></a>
-              </div>
-            </div>
-            <div class="item">
-              <img src="assets/images/projects-02.jpg" alt="">
+            <div class="item" >
+              <img src="assets/images/projects-01.jpg" style="height: 200px" alt="">
               <div class="down-content">
                 <h4>Premier Event Transport in West Palm Beach</h4>
-                <a href="#"><i class="fa fa-link" style="color: #F4BC33 !important"></i></a>
+                <a href="#contact"><i class="fa fa-link" style="color: #F4BC33 !important"></i></a>
               </div>
             </div>
             <div class="item">
-              <img src="assets/images/projects-03.jpg" alt="">
+              <img src="assets/images/projects-02.jpg" style="height: 200px" alt="">
+              <div class="down-content">
+                <h4>Reliable Transportation Services </h4>
+                <a href="#contact"><i class="fa fa-link" style="color: #F4BC33 !important"></i></a>
+              </div>
+            </div>
+            <div class="item">
+              <img src="assets/images/projects-03.png" style="height: 200px" alt="">
+              <div class="down-content">
+                <h4>Your Go-To for West Palm Beach Transfers</h4>
+                <a href="#contact"><i class="fa fa-link" style="color: #F4BC33 !important"></i></a>
+              </div>
+            </div>
+            <div class="item">
+              <img src="assets/images/projects-04.jpg" style="height: 200px" alt="">
+              <div class="down-content">
+                <h4>Effortless Commutes in West Palm Beach</h4>
+                <a href="#contact"><i class="fa fa-link" style="color: #F4BC33 !important"></i></a>
+              </div>
+            </div>
+            <div class="item">
+              <img src="assets/images/projects-02.jpg" style="height: 200px" alt="">
+              <div class="down-content">
+                <h4>Top-Notch SUV Rentals in West Palm Beach </h4>
+                <a href="#contact"><i class="fa fa-link" style="color: #F4BC33 !important"></i></a>
+              </div>
+            </div>
+            <div class="item">
+              <img src="assets/images/projects-03.png" style="height: 200px" alt="">
               <div class="down-content">
                 <h4>West Palm Beach Airport Shuttle Excellence</h4>
-                <a href="#"><i class="fa fa-link" style="color: #F4BC33 !important"></i></a>
+                <a href="#contact"><i class="fa fa-link" style="color: #F4BC33 !important"></i></a>
               </div>
             </div>
           </div>
@@ -410,7 +401,7 @@ https://templatemo.com/tm-582-tale-seo-agency
     </div>
   </div>
 
-  <div class="infos section" id="infos" style="position: relative; top:-180px">
+  <div class="infos section" id="infos" >
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -425,7 +416,7 @@ https://templatemo.com/tm-582-tale-seo-agency
                 <div class="section-heading">
                   <h2>More <em>About Us</em> &amp; What <span>We Offer</span></h2>
                   <div class="line-dec"></div>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consectetur quisquam possimus porro in non esse earum soluta. Error repellat repudiandae hic explicabo unde omnis eos quam. Molestias, dolores sit.</p>
+                  <p>At Gardens Transportation, we pride ourselves on delivering exceptional service around the clock. Our commitment to punctuality ensures that you'll always reach your destination on time, whether it's an early morning flight or a late-night event. Our friendly and professional drivers are dedicated to providing a safe and comfortable journey, making your experience with us truly enjoyable.</p>
                 </div>
                 <div class="skills">
                   <div class="skill-slide marketing">
@@ -444,7 +435,10 @@ https://templatemo.com/tm-582-tale-seo-agency
                     <span>100%</span>
                   </div>
                 </div>
-                <p class="more-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doers eiusmod tempor incididunt ut labore et dolore dolor dolor sit amet, consectetur adipiscing elit, sed doers eiusmod.</p>
+                <p class="more-info">Customer satisfaction is our top priority. Our 24/7 customer service team is always available to assist with any questions or special requests you may have. From the moment you book with us, you'll experience the highest level of care and attention.
+<br>
+<br>
+Ready to experience the best in transportation? Book your ride with Gardens Transportation today and enjoy the reliability and excellence we are known for.</p>
               </div>
             </div>
           </div>
@@ -453,7 +447,7 @@ https://templatemo.com/tm-582-tale-seo-agency
     </div>
   </div>
 
-  <div class="contact-us section" id="contact" style="position: relative; top:-150px">
+  <div class="contact-us section" id="contact" >
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -466,11 +460,11 @@ https://templatemo.com/tm-582-tale-seo-agency
               </div>
               <div class="col-lg-8">
                 
-  <!--   <?php
+    <?php
     if (isset($respuesta)) {
         echo '<div class="alert alert-info" role="alert" style="background:#F4BC33 !important">' . $respuesta . '</div>';
     }
-    ?> -->
+    ?>
                 <form id="contact-form" action="" method="post" action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>">
                   <div class="row">
                     <div class="col-lg-12">
@@ -490,31 +484,31 @@ https://templatemo.com/tm-582-tale-seo-agency
                     </div>
                     <div class="col-lg-12">
                       <fieldset>
-                        <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-mail" required="">
+                        <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-mail" required>
                       </fieldset>
                     </div>
                     <div class="col-lg-6">
                       <fieldset>
                       <label for="inputPDateTime" class="form-label">Pick-up Date & Time</label>
-                        <input type="datetime-local" name="pdateTime" id="pdateTime" placeholder="Pick-up Date & Time" autocomplete="on" >
+                        <input type="datetime-local" name="pdateTime" id="pdateTime" placeholder="Pick-up Date & Time" autocomplete="on" required>
                       </fieldset>
                     </div>
                     <div class="col-lg-6">
                       <fieldset>
                       <label for="inputPickup" class="form-label">Pick Up Address</label>
-                        <input type="text" name="pickup" id="inputPickup"  autocomplete="on" >
+                        <input type="text" name="pickup" id="inputPickup"  autocomplete="on" required>
                       </fieldset>
                     </div>
                     <div class="col-lg-6">
                       <fieldset>
                       <label for="inputPDateTime" class="form-label">Drop-Off Date & Time</label>
-                        <input type="datetime-local" name="ddateTime" id="inputDDateTime" placeholder="Pick-up Date & Time" autocomplete="on" >
+                        <input type="datetime-local" name="ddateTime" id="inputDDateTime" placeholder="Pick-up Date & Time" autocomplete="on"  >
                       </fieldset>
                     </div>
                     <div class="col-lg-6">
                       <fieldset>
                       <label for="inputPickup" class="form-label">Drop-Off Address</label>
-                        <input type="text" name="dropoff" id="inputDropoff"  autocomplete="on" >
+                        <input type="text" name="dropoff" id="inputDropoff"  autocomplete="on" required>
                       </fieldset>
                     </div>
                     <div class="col-lg-4">
@@ -524,7 +518,7 @@ https://templatemo.com/tm-582-tale-seo-agency
                     </div>
                     <div class="col-lg-4">
                       <fieldset>
-                        <input type="text" type="text" name="flight" id="inputFlight"  placeholder="Flight No (If Appe)" autocomplete="on" required>
+                        <input type="text" type="text" name="flight" id="inputFlight"  placeholder="Flight No (If Appe)" autocomplete="on" >
                       </fieldset>
                     </div>
                     <div class="col-lg-4">
@@ -549,20 +543,23 @@ https://templatemo.com/tm-582-tale-seo-agency
                     <div class="col-lg-4">
                       <div class="info-item">
                       <i class="fa fa-phone" style="color: white !important"></i>
-                        <h4><a href="#">010-020-0340</a></h4>
+                      <br> <br> 
+                        <h4><a href="#" style="font-size:12px">561-799-4994</a></h4>
+                        <h4><a href="#" style="font-size:12px">561-799-2088</a></h4>
+                        <h4><a href="#" style="font-size:12px">Fax: 561-799-7701</a></h4>
                       </div>
                     </div>
                     <div class="col-lg-4">
                       <div class="info-item">
-                        <i class="fa fa-envelope" style="color: white !important"></i>
-                        <h4><a href="#">info@company.com</a></h4>
-                        <h4><a href="#">hello@company.com</a></h4>
+                        <i class="fa fa-envelope" style="color: white !important; "></i>
+                        <h4><a href="" style="font-size:12px">gardensyellowcab@yahoo.com</a></h4>
+                        
                       </div>
                     </div>
                     <div class="col-lg-4">
                       <div class="info-item">
                         <i class="fa fa-map-marker" style="color: white !important"></i>
-                        <h4><a href="#">1616 N Florida Mango Rd, West Palm Beach, FL 33414</a></h4>
+                        <h4><a href="#" style="font-size:12px"> <br> 1616 N Florida Mango Rd, West Palm Beach, FL 33414</a></h4>
                       </div>
                     </div>
                   </div>
@@ -575,12 +572,13 @@ https://templatemo.com/tm-582-tale-seo-agency
     </div>
   </div>
 
+
   <footer>
-    <div class="container">
+    <div class="container" >
       <div class="col-lg-12">
-        <p>Copyright © 2025 <a href="#">Gardens Taxi</a>. All rights reserved. 
+        <p>Copyright © 2025 <a href="#">Gardens Transportation</a>. All rights reserved. 
         
-        <br>Design: <a href="https://templatemo.com" target="_blank">Camila Reyes</a></p>
+       
       </div>
     </div>
   </footer>
